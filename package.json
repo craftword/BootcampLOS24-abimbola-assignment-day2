@@ -1,9 +1,9 @@
 {
-  "name": "Bootcamp-LOS24-Abimbola-assignment-day1",
+  "name": "Bootcamp-LOS24-Abimbola-assignment-day2",
   "version": "1.0.0",
-  "description": "Bootcamp-LOS24-Abimbola-assignment-day1",
+  "description": "Bootcamp-LOS24-Abimbola-assignment-day2",
   "scripts": {
-    "test": "mocha spec/getPrime-spec.js"
+    "test": "jasmine spec/oop-spec.js"
   },
   "repository": {
     "type": "git",

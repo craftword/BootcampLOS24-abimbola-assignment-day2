@@ -1,11 +1,11 @@
 class MobilePhones  {
-    constructor(IMEICode, Processor, internalMemory, SIMCard) {
+    constructor(IMEICode, OS, SIMCard) {
         
-        // If it is, use it to initialize "this" date
+        // If it is, use it to initialize "this" Phone
         this._IMEICode = IMEICode;
-        this._Processor = Processor;
-        this._internalMemory = internalMemory;
         this._SIMCard = SIMCard;
+        this._OS = OS;
+        
     }
 
     Dial() {
@@ -34,9 +34,9 @@ class MobilePhones  {
 class Samsung extends MobilePhones {
     constructor(IMEICode, Processor, internalMemory, SIMCard) {
         super(IMEICode, Processor, internalMemory, SIMCard);
-        //this._OS = "Andriod 5.0";
+        
     }
-    Chat() {
+    AboutPhone() {
         console.log("I am chatting"); 
     }
 
@@ -45,7 +45,7 @@ class Samsung extends MobilePhones {
 class iPhone extends MobilePhones {
     constructor(IMEICode, Processor, internalMemory, SIMCard) {
         super(IMEICode, Processor, internalMemory, SIMCard);
-        this._OS = "iOS 3.0";
+        
     }
 
 }
