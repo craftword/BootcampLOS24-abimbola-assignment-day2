@@ -10,22 +10,22 @@ class MobilePhones  {
             // Dialing numbers 
             // ...
             if(this._SIMCard >= 2) {
-                console.log("Choice the network you want to use to call");
+                console.log('Choice the network you want to use to call');
             }else {
-                console.log("Dial the numbers .......")
+                console.log('Dial the numbers .......');
             }
-        }
+        };
 
         this.Receive = function() {
             // Receive a call
             // ...
-            console.log("Receiving a call");
-        }
+            console.log('Receiving a call');
+        };
         this.SendMessage = function() {
             // Send an SMS 
             // ...
-            console.log("sending a message");
-        }
+            console.log('sending a message');
+        };
     
 
     }
@@ -36,8 +36,8 @@ class Samsung extends MobilePhones {
     constructor(IMEICode, OS, SIMCard) {
         super(IMEICode, OS, SIMCard);
         this.chat = function() {
-        console.log("I am chatting"); 
-        }          
+            console.log('I am chatting'); 
+        };          
     }
     
 
