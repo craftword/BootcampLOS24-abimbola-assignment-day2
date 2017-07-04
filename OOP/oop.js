@@ -32,8 +32,8 @@ class MobilePhones  {
 }
 
 class Samsung extends MobilePhones {
-    constructor(IMEICode, Processor, internalMemory, SIMCard) {
-        super(IMEICode, Processor, internalMemory, SIMCard);
+    constructor(IMEICode, OS, SIMCard) {
+        super(IMEICode, OS, SIMCard);
         
     }
     AboutPhone() {
@@ -49,13 +49,6 @@ class iPhone extends MobilePhones {
     }
 
 }
-const phone = new MobilePhones;
-const galaxy = new Samsung();
-const iPhone7 = new iPhone();
-galaxy._PhoneNumber = "Andriod 5";
-console.log(galaxy._OS);
-galaxy.Dial("08027313450");
-iPhone7.Receive(); 
-console.log(iPhone7._OS);
-galaxy._SIMCard = 3;
-galaxy.Dial();
+
+exports.MobilePhones = MobilePhones;
+exports.Samsung = Samsung;

@@ -17,7 +17,8 @@
   "homepage": "https://github.com/craftword/Bootcamp-LOS24-Abimbola-assignment-day1",
   "dependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "jasmine": "^2.5.3"
   }
  
 }
