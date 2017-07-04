@@ -1,22 +1,44 @@
-let jasmine = require("jasmine")
-let phone = require("../OOP/oop.js");
+// testing code goes here
 
-'use strict';
-  describe("Mobile Phone Class: Check typeof and instanceOf", function() {
+'use strict'
 
-    it("The MobilePhone should be a type of `object`, and an instance of the `MobilePhone` class", function() {
-      let galaxy = new phone.MobilePhones("IMEI464836367", "OS", 2);
-      expect(typeof galaxy).toEqual(typeof {});
-      expect(galaxy instanceof phone.MobilePhones()).toBeTruthy();
-    });
-/*
-    it("The MobilePhones should be called 'MobilePhones' if no name is passed as a parameter", function() {
-      let x5 = new phone.MobilePhones("8w7e89w9","IOS",3);
-	    expect(x5.Receive()).toEqual('Receiving a call');
-        expect(x5.SendMessage()).toEqual("sending a message");
-    });*/
+var chai = require('chai');
+var should = chai.should();
+var app = require("../OOP/oop.js");
 
-   
-    
-  });
-  
+
+
+describe("Test for OOP property", function() {
+
+      it('should inherit functionality from Parent', function(){
+      //create instance
+      let child = new app.Samsung("IMEI167256363", "Andriod", 3);
+      
+      // check the child can access the attribute of parent
+      child._IMEICode.should.equal('IMEI167256363');
+      child._OS.shouild.equal('Andriod');
+      
+     });
+
+     it('child should to access it own function ', function(){
+      //create instance
+      let child = new app.Samsung("IMEI167256363", "Andriod", 3);
+
+      // check the child can access the attribute of parent
+     // child.Dial().to.be('Choice the network you want to use to call');
+       child._OS.shouild.equal('Andriod');
+      
+     });
+
+     it('parent should to access it own function and attributes ', function(){
+      //create instance
+      let parent = new app.MobilePhones("IMEI167256363", "Andriod", 3);
+
+      // check the parent access its attribute
+      parent._OS.should.equal('Andriod');
+     // parent.Receive().should.eqaul('Receiving a call');
+      
+     });
+
+});
+

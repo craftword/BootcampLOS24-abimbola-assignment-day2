@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Bootcamp-LOS24-Abimbola-assignment-day2",
   "scripts": {
-    "test": "babel-node spec/oop-spec.js"
+    "test": "mocha spec/oop-spec.js"
   },
   "repository": {
     "type": "git",

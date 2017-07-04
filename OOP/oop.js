@@ -5,28 +5,29 @@ class MobilePhones  {
         this._IMEICode = IMEICode;
         this._SIMCard = SIMCard;
         this._OS = OS;
-        
-    }
 
-    Dial() {
-        // Dialing numbers 
-        // ...
-        if(this._SIMCard >= 2) {
-            console.log("Choice the network you want to use to call");
-        }else {
-            console.log("Dial the numbers .......")
+        this.Dial = function() {
+            // Dialing numbers 
+            // ...
+            if(this._SIMCard >= 2) {
+                console.log("Choice the network you want to use to call");
+            }else {
+                console.log("Dial the numbers .......")
+            }
         }
-    }
 
-    Receive() {
-        // Receive a call
-        // ...
-        console.log("Receiving a call");
-    }
-    SendMessage() {
-        // Send an SMS 
-        // ...
-        console.log("sending a message");
+        this.Receive = function() {
+            // Receive a call
+            // ...
+            console.log("Receiving a call");
+        }
+        this.SendMessage = function() {
+            // Send an SMS 
+            // ...
+            console.log("sending a message");
+        }
+    
+
     }
    
 }
@@ -34,21 +35,15 @@ class MobilePhones  {
 class Samsung extends MobilePhones {
     constructor(IMEICode, OS, SIMCard) {
         super(IMEICode, OS, SIMCard);
-        
-    }
-    AboutPhone() {
+        this.chat = function() {
         console.log("I am chatting"); 
+        }          
     }
+    
 
 }
 
-class iPhone extends MobilePhones {
-    constructor(IMEICode, Processor, internalMemory, SIMCard) {
-        super(IMEICode, Processor, internalMemory, SIMCard);
-        
-    }
 
-}
 
 exports.MobilePhones = MobilePhones;
 exports.Samsung = Samsung;
