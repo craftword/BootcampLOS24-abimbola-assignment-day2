@@ -8,9 +8,9 @@ let app = require('../OOP/oop.js');
 
 
 
-describe('Test for OOP property', function() {
+describe('Test for OOP attributes',() => {
 
-    it('should inherit functionality from Parent', function(){
+    it('should inherit functionality from Parent',() =>{
         //create instance
         let child = new app.Samsung('IMEI167256363', 'Andriod', 3);
         // check the child can access the attribute of parent
@@ -19,17 +19,17 @@ describe('Test for OOP property', function() {
       
     });
 
-    it('child should to access it own function ', function(){
+    it('child should to access it own method ',() =>{
         //create instance
         let child = new app.Samsung('IMEI167256363', 'Andriod', 3);
 
         // check the child can access the attribute of parent
-        // child.Dial().to.be('Choice the network you want to use to call');
-        child._OS.should.equal('Andriod');
+         //child.Dial().to.be('Choice the network you want to use to call');
+         child._OS.should.equal('Andriod');
       
     });
 
-    it('parent should be able to access it own function and attributes ', function(){
+    it('parent should be able to access it own function and attributes ',() =>{
         //create instance
         let parent = new app.MobilePhones('IMEI167256363', 'Andriod', 3);
 

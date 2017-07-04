@@ -6,7 +6,7 @@ class MobilePhones  {
         this._SIMCard = SIMCard;
         this._OS = OS;
 
-        this.Dial = function() {
+        this.Dial =() => {
             // Dialing numbers 
             // ...
             if(this._SIMCard >= 2) {
@@ -16,12 +16,12 @@ class MobilePhones  {
             }
         };
 
-        this.Receive = function() {
+        this.Receive =() => {
             // Receive a call
             // ...
             console.log('Receiving a call');
         };
-        this.SendMessage = function() {
+        this.SendMessage =() => {
             // Send an SMS 
             // ...
             console.log('sending a message');
@@ -35,7 +35,7 @@ class MobilePhones  {
 class Samsung extends MobilePhones {
     constructor(IMEICode, OS, SIMCard) {
         super(IMEICode, OS, SIMCard);
-        this.chat = function() {
+        this.chat =() => {
             console.log('I am chatting'); 
         };          
     }
